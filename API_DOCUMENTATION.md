@@ -102,7 +102,6 @@ Register a new user account.
     }
 }
 ```
-
 ### Login
 **POST** `/auth/login`
 
@@ -149,7 +148,6 @@ Authenticate user and receive JWT token.
     }
 }
 ```
-
 ### Refresh Token
 **POST** `/auth/refresh`
 
@@ -171,7 +169,6 @@ Authorization: Bearer {current-token}
     }
 }
 ```
-
 ### Logout
 **POST** `/auth/logout`
 
@@ -189,7 +186,6 @@ Authorization: Bearer {your-token}
     "message": "Successfully logged out"
 }
 ```
-
 ### Get User Profile
 **GET** `/auth/user-profile`
 
@@ -281,7 +277,6 @@ Authorization: Bearer {your-token}
     }
 }
 ```
-
 ### Check-out
 **POST** `/presence/checkout`
 
@@ -332,7 +327,6 @@ Authorization: Bearer {your-token}
     }
 }
 ```
-
 ### Get Presence Status
 **GET** `/presence/status`
 
@@ -372,7 +366,6 @@ Authorization: Bearer {your-token}
     }
 }
 ```
-
 ### Get Presence History
 **GET** `/presence/history`
 
@@ -444,7 +437,6 @@ Authorization: Bearer {your-token}
     }
 }
 ```
-
 ### Get Today's Presence Status
 **GET** `/presence/today`
 
@@ -683,7 +675,7 @@ Authorization: Bearer {your-token}
 ```
 
 ### Approve Manual Presence Request (Admin Only)
-**PUT** `/manual-presence-requests/{id}/approve`
+**PATCH** `/manual-presence-requests/{id}/approve`
 
 Approve a manual presence request.
 
@@ -725,7 +717,7 @@ Authorization: Bearer {admin-token}
 ```
 
 ### Reject Manual Presence Request (Admin Only)
-**PUT** `/manual-presence-requests/{id}/reject`
+**PATCH** `/manual-presence-requests/{id}/reject`
 
 Reject a manual presence request.
 
